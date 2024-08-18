@@ -17,8 +17,8 @@ def generate_response():
         response = {}
 
         # Expanded small talk responses
-        if any(greeting in user_message for greeting in ['hello', 'hi', 'hey']):
-            response = {'reply': 'Hello! How can I assist you with your admission inquiries today?', 'buttons': []}
+        if any(greeting in user_message for greeting in ['hello', 'hi', 'hey','namaste']):
+            response = {'reply': 'Hello ! How can I assist you with your admission inquiries today ?', 'buttons': []}
         elif 'how are you' in user_message:
             response = {'reply': "I'm just a bot, but I'm here to help! How can I assist you?", 'buttons': []}
         elif 'thank you' in user_message or 'thanks' in user_message:
